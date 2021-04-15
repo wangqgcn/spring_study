@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="pojo.Address"/>
+
+
+    <bean id="student" class="pojo.Student">
+
+        <property name="name" value="quint"/>
+
+        <property name="address" ref="address"/>
+
+        <property name="books">
+            <array>
+                <value>百年孤独</value>
+                <value>西游记</value>
+                <value>三国演义</value>
+            </array>
+        </property>
+
+        <property name="hobbys">
+            <list>
+                <value>listen music</value>
+                <value>play computer game</value>
+                <value>movie</value>
+            </list>
+        </property>
+
+        <property name="card">
+            <map>
+
+            </map>
+        </property>
+    </bean>
+</beans>
