@@ -11,10 +11,11 @@
 
     <bean id="student" class="pojo.Student">
 
+<!--        1.普通值 value-->
         <property name="name" value="quint"/>
-
+<!--        2.Bean注入 ref-->
         <property name="address" ref="address"/>
-
+<!--        3.数组-->
         <property name="books">
             <array>
                 <value>百年孤独</value>
@@ -22,7 +23,7 @@
                 <value>三国演义</value>
             </array>
         </property>
-
+<!--        4.List-->
         <property name="hobbys">
             <list>
                 <value>listen music</value>
@@ -30,7 +31,7 @@
                 <value>movie</value>
             </list>
         </property>
-
+<!--        5.Map-->
         <property name="card">
             <map>
                 <entry key="身份证" value="1213143153111231442"/>
@@ -38,7 +39,7 @@
                 <entry key="手机号" value="15623214343"/>
             </map>
         </property>
-
+<!--        6.Set-->
         <property name="games">
             <set>
                 <value>LOL</value>
@@ -46,11 +47,11 @@
                 <value>天涯明月刀</value>
             </set>
         </property>
-
+<!--        7.null值-->
         <property name="wife">
             <null/>
         </property>
-
+<!--        8.info-->
         <property name="info">
             <props>
                 <prop key="版权">Riot Game</prop>
