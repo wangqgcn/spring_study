@@ -18,7 +18,7 @@
 <!--    <bean id="dog22" class="pojo.Dog"/>-->
 
 <!--    <bean id="people" class="pojo.People"/>-->
-    <context:component-scan base-package="pojo"/>
 
+    <context:component-scan base-package="pojo"/>
 
 </beans>
